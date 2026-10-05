@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Tricards · Chinese 101</title>
+  <meta name="description" content="Three-sided notecards (characters, pinyin, definition) for UChicago Chinese 101.">
+  <meta name="theme-color" content="#c8372d">
+  <meta name="referrer" content="no-referrer">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23c8372d'/%3E%3Ctext x='32' y='46' font-size='40' text-anchor='middle' fill='white' font-family='sans-serif'%3E%E4%B8%89%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    /* Apply theme before first paint to avoid a flash. */
+    (function () {
+      try {
+        var s = JSON.parse(localStorage.getItem('tricards:v1:settings') || '{}');
+        var t = s.theme === 'light' || s.theme === 'dark' ? s.theme
+          : (window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.dataset.theme = t;
+        document.documentElement.dataset.font = s.hanziFont || 'sans';
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <div class="brand">
+        <span class="logo" lang="zh-CN" aria-hidden="true">三</span>
+        <div>
+          <h1>Tricards</h1>
+          <p>Chinese 101 · three-sided notecards</p>
+        </div>
+      </div>
+      <div class="top-actions">
+        <button type="button" class="icon-btn" id="theme-btn" aria-label="Toggle dark mode"></button>
+        <button type="button" class="btn ghost" id="settings-btn">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="21" x2="4" y2="14"/><line x1="4" y1="10" x2="4" y2="3"/><line x1="12" y1="21" x2="12" y2="12"/><line x1="12" y1="8" x2="12" y2="3"/><line x1="20" y1="21" x2="20" y2="16"/><line x1="20" y1="12" x2="20" y2="3"/><line x1="1" y1="14" x2="7" y2="14"/><line x1="9" y1="8" x2="15" y2="8"/><line x1="17" y1="16" x2="23" y2="16"/></svg>
+          <span>Settings</span>
+        </button>
+      </div>
+    </header>
+
+    <section class="deck-bar" aria-label="Choose what to study">
+      <div class="deck-row">
+        <div id="unit-chips" class="chips" aria-label="Units"></div>
+      </div>
+      <div class="deck-row deck-row-2">
+        <div id="type-tabs" class="segmented type-tabs" role="tablist" aria-label="Mode"></div>
+        <div class="deck-meta">
+          <select id="filter-select" aria-label="Filter cards">
+            <option value="all">All cards</option>
+            <option value="starred">★ Starred</option>
+            <option value="needs">Needs work</option>
+          </select>
+          <span id="deck-count" class="deck-count"></span>
+        </div>
+      </div>
+    </section>
+
+    <nav id="activity-tabs" class="activity-tabs" aria-label="Study modes"></nav>
+
+    <main id="view" class="view"></main>
+
+    <footer class="footer">
+      <span>Made for UChicago Chinese 101</span>
+      <span class="footer-keys"><kbd>Space</kbd> flip · <kbd>←</kbd><kbd>→</kbd> sort · <kbd>S</kbd> speak</span>
+    </footer>
+  </div>
+
+  <div id="settings-modal" class="modal" hidden role="dialog" aria-modal="true" aria-labelledby="settings-title">
+    <div class="modal-card">
+      <div class="modal-head">
+        <h2 id="settings-title">Settings</h2>
+        <button type="button" class="icon-btn modal-close" aria-label="Close settings">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+      <div id="settings-body" class="modal-body"></div>
+    </div>
+  </div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/core.js"></script>
+  <script src="js/views/learn.js"></script>
+  <script src="js/views/browse.js"></script>
+  <script src="js/views/match.js"></script>
+  <script src="js/views/quiz.js"></script>
+  <script src="js/views/write.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
