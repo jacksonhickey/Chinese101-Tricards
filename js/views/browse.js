@@ -30,6 +30,7 @@
       <article class="tile ${c.lines ? 'tile-conv' : ''}" data-id="${esc(c.id)}">
         <button type="button" class="icon-btn star-btn ${starred ? 'on' : ''}" data-action="star" aria-label="Star" aria-pressed="${starred}">${icon('star', starred)}</button>
         ${sides}
+        ${hidden.size ? '' : TC.notesHtml(c)}
         <div class="tile-meta"><span>${esc(c.unitName)}</span>${stats}</div>
       </article>`;
   }

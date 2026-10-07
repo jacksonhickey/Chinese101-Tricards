@@ -484,9 +484,14 @@
     if (side === 'pinyin') {
       return `<button type="button" class="pinyin-big speak-target" title="Click to hear it"><span class="pinyin-text">${pinyinHtml(card.pinyin)}</span><span class="speak-icon">${icon('volume')}</span></button>`;
     }
-    return `<div class="english">${esc(card.english)}</div>${card.notes ? `<div class="notes">${esc(card.notes)}</div>` : ''}`;
+    return `<div class="english">${esc(card.english)}</div>`;
   }
   TC.renderSide = renderSide;
+
+  // Notes often contain characters/pinyin, so they are only shown once every side is revealed.
+  TC.notesHtml = function (card) {
+    return card.notes && !card.lines ? `<div class="notes">${esc(card.notes)}</div>` : '';
+  };
 
   // Handle a click on any `.speak-target` inside a rendered card.
   TC.speakFromTarget = function (target, card) {
@@ -536,7 +541,8 @@
       this.el.querySelector('.fc-dots').innerHTML = this.order
         .map((s, i) => `<i class="${i === this.index ? 'on' : ''}" title="${SIDE_LABEL[s]}"></i>`)
         .join('');
-      this.el.querySelector('.fc-body').innerHTML = renderSide(this.card, side);
+      this.el.querySelector('.fc-body').innerHTML =
+        renderSide(this.card, side) + (this.index === this.order.length - 1 ? TC.notesHtml(this.card) : '');
       const next = this.order[(this.index + 1) % 3];
       this.el.querySelector('.fc-hint').textContent = `Tap for ${SIDE_LABEL[next].toLowerCase()}`;
       this.renderStar();
