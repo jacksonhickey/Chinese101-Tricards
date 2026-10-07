@@ -422,7 +422,7 @@ select {
 .conv-wrap { width: 100%; text-align: left; }
 .conv-title { font-weight: 700; color: var(--muted); margin-bottom: 8px; font-size: .9rem; }
 .conv { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
-.conv li { display: grid; grid-template-columns: 2.2em 1fr; gap: 8px; align-items: baseline; }
+.conv li { display: grid; grid-template-columns: 3.4em 1fr; gap: 8px; align-items: baseline; }
 .speaker { font-weight: 800; color: var(--accent); font-size: .85rem; text-align: right; }
 .line-hanzi { font-family: var(--font-hanzi); font-size: clamp(20px, 4.4vw, 26px); }
 .line-english { font-size: 1.05rem; }
