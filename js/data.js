@@ -45,6 +45,11 @@ window.TRICARDS_UNITS = [
       ['呢', 'ne', 'question particle ("and…?")'],
       ['姐', 'jiě', 'older sister', 'Used in 小姐 xiǎojiě (Miss)'],
       ['叫', 'jiào', 'to be called; to call'],
+      ['什', 'shén', 'what (in 什么)', 'Used in 什么 shénme'],
+      ['么', 'me', '(suffix in 什么)', 'Used in 什么 shénme'],
+      ['名', 'míng', 'name'],
+      ['字', 'zì', 'character; word', 'Neutral tone (zi) in 名字 míngzi'],
+      ['先', 'xiān', 'first; before', 'Used in 先生 xiānsheng (Mr.)'],
     ],
     phrases: [
       ['你好！', 'Nǐ hǎo!', 'Hello!'],
