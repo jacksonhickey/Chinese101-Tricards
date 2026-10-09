@@ -50,6 +50,11 @@ window.TRICARDS_UNITS = [
       ['名', 'míng', 'name'],
       ['字', 'zì', 'character; word', 'Neutral tone (zi) in 名字 míngzi'],
       ['先', 'xiān', 'first; before', 'Used in 先生 xiānsheng (Mr.)'],
+      ['生', 'shēng', 'to be born; life; student', 'Neutral tone (sheng) in 先生 xiānsheng'],
+      ['李', 'Lǐ', 'a common surname; plum', 'As in 李友 Lǐ Yǒu'],
+      ['友', 'yǒu', 'friend', 'As in 李友 Lǐ Yǒu and 朋友 péngyou'],
+      ['王', 'Wáng', 'a common surname; king', 'As in 王朋 Wáng Péng'],
+      ['朋', 'péng', 'friend; companion', 'As in 王朋 Wáng Péng and 朋友 péngyou'],
     ],
     phrases: [
       ['你好！', 'Nǐ hǎo!', 'Hello!'],
