@@ -70,6 +70,7 @@ window.TRICARDS_UNITS = [
       ['约', 'yuē', 'to make an appointment; approximately', 'As in 纽约 Niǔyuē (New York)'],
       ['北', 'běi', 'north', 'As in 北京 Běijīng (Beijing)'],
       ['京', 'jīng', 'capital (city)', 'As in 北京 Běijīng (Beijing)'],
+      ['小', 'xiǎo', 'small; little; young', 'As in 小姐 xiǎojiě (Miss)'],
     ],
     phrases: [
       ['你好！', 'Nǐ hǎo!', 'Hello!'],
