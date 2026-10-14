@@ -152,7 +152,11 @@
 
   function check(answer, item) {
     if (!String(answer).trim()) return 'empty';
-    if (opts.answer === 'pinyin') return Pinyin.compare(answer, item.pinyin);
+    if (opts.answer === 'pinyin') {
+      // Alternate readings can be written with a slash (e.g. "gè / ge"); any one counts.
+      const results = String(item.pinyin).split('/').map((p) => Pinyin.compare(answer, p));
+      return results.includes('correct') ? 'correct' : results.includes('tones') ? 'tones' : results[0];
+    }
     if (opts.answer === 'hanzi') return normHanzi(answer) === normHanzi(item.hanzi) ? 'correct' : 'wrong';
     const a = normEn(answer);
     const full = normEn(item.english);

@@ -115,6 +115,7 @@ window.TRICARDS_UNITS = [
       ['这', 'zhè', 'this', 'Also pronounced zhèi'],
       ['爸', 'bà', 'dad', '爸爸 bàba = dad'],
       ['妈', 'mā', 'mom', '妈妈 māma = mom'],
+      ['个', 'gè / ge', 'measure word (general)', 'Usually neutral tone: 一个人 yí ge rén = one person'],
     ],
     phrases: [],
     conversations: [],
