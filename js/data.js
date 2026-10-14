@@ -68,6 +68,8 @@ window.TRICARDS_UNITS = [
       ['美', 'měi', 'beautiful', 'As in 美国 Měiguó (USA)'],
       ['纽', 'niǔ', 'button; knob', 'As in 纽约 Niǔyuē (New York)'],
       ['约', 'yuē', 'to make an appointment; approximately', 'As in 纽约 Niǔyuē (New York)'],
+      ['北', 'běi', 'north', 'As in 北京 Běijīng (Beijing)'],
+      ['京', 'jīng', 'capital (city)', 'As in 北京 Běijīng (Beijing)'],
     ],
     phrases: [
       ['你好！', 'Nǐ hǎo!', 'Hello!'],
