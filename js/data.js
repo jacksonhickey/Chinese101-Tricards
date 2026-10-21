@@ -146,4 +146,21 @@ window.TRICARDS_UNITS = [
     phrases: [],
     conversations: [],
   },
+  {
+    id: 'unit-3',
+    name: 'Unit 3',
+    description: 'Dates and Time (Integrated Chinese Lesson 3)',
+    characters: [
+      ['号', 'hào', 'day of the month; number', '九月十二号 jiǔ yuè shí\'èr hào = September 12th'],
+      ['星', 'xīng', 'star', 'As in 星期 xīngqī (week)'],
+      ['期', 'qī', 'period of time', 'As in 星期 xīngqī (week); 星期一 = Monday'],
+      ['天', 'tiān', 'day; sky', 'As in 今天 jīntiān (today)'],
+      ['今', 'jīn', 'now; present', 'As in 今天 jīntiān (today) and 今年 jīnnián (this year)'],
+      ['年', 'nián', 'year', 'As in 今年 jīnnián (this year)'],
+      ['多', 'duō', 'many; much; how (old, many…)', '多大 duō dà = how old'],
+      ['岁', 'suì', 'years old; age', '我十八岁 = I am 18 years old'],
+    ],
+    phrases: [],
+    conversations: [],
+  },
 ];
