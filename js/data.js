@@ -178,6 +178,7 @@ window.TRICARDS_UNITS = [
       ['上', 'shàng', 'up; above; on', 'Neutral tone (shang) in 晚上 wǎnshang'],
       ['见', 'jiàn', 'to see', 'As in 再见 zàijiàn (goodbye)'],
       ['再', 'zài', 'again', 'As in 再见 zàijiàn (goodbye; "see you again")'],
+      ['日', 'rì', 'sun; day', 'As in 生日 shēngrì (birthday) and 星期日 xīngqīrì (Sunday)'],
     ],
     phrases: [],
     conversations: [],
