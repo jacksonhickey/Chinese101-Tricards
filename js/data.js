@@ -195,4 +195,17 @@ window.TRICARDS_UNITS = [
     phrases: [],
     conversations: [],
   },
+  {
+    id: 'unit-4',
+    name: 'Unit 4',
+    description: 'Hobbies (Integrated Chinese Lesson 4)',
+    characters: [
+      ['周', 'zhōu', 'week; cycle', 'As in 周末 zhōumò (weekend)'],
+      ['末', 'mò', 'end', 'As in 周末 zhōumò (weekend)'],
+      ['打', 'dǎ', 'to hit; to play (a ball game)', '打球 dǎ qiú = to play ball'],
+      ['球', 'qiú', 'ball', '打球 dǎ qiú = to play ball'],
+    ],
+    phrases: [],
+    conversations: [],
+  },
 ];
