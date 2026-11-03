@@ -212,6 +212,7 @@ window.TRICARDS_UNITS = [
       ['跳', 'tiào', 'to jump', '跳舞 tiào wǔ = to dance'],
       ['舞', 'wǔ', 'dance', '跳舞 tiào wǔ = to dance'],
       ['听', 'tīng', 'to listen', '听音乐 tīng yīnyuè = to listen to music'],
+      ['音', 'yīn', 'sound', 'As in 音乐 yīnyuè (music)'],
     ],
     phrases: [],
     conversations: [],
