@@ -226,15 +226,6 @@ window.TRICARDS_UNITS = [
       ['昨', 'zuó', 'past; yesterday (first part of the word)', 'As in 昨天 zuótiān (yesterday)'],
       ['所', 'suǒ', 'place; so (first part of "therefore")', 'As in 所以 suǒyǐ (so; therefore)'],
       ['以', 'yǐ', 'by means of; using', 'As in 所以 suǒyǐ (so) and 可以 kěyǐ (can)'],
-    ],
-    phrases: [],
-    conversations: [],
-  },
-  {
-    id: 'unit-5',
-    name: 'Unit 5',
-    description: '',
-    characters: [
       ['久', 'jiǔ', 'long (time)', '好久不见 hǎo jiǔ bú jiàn = long time no see'],
       ['错', 'cuò', 'wrong; mistake', '不错 búcuò = not bad; pretty good'],
       ['想', 'xiǎng', 'to want to; to think; to miss', '我想去 wǒ xiǎng qù = I want to go'],
