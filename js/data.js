@@ -242,4 +242,17 @@ window.TRICARDS_UNITS = [
     phrases: [],
     conversations: [],
   },
+  {
+    id: 'unit-5',
+    name: 'Unit 5',
+    description: 'Visiting Friends (Integrated Chinese Lesson 5)',
+    characters: [
+      ['呀', 'ya', 'particle (softens a sentence)', '是你呀！ = Oh, it\'s you!'],
+      ['进', 'jìn', 'to enter; to come in', '请进！ qǐng jìn = Please come in!'],
+      ['快', 'kuài', 'fast; quick; quickly', '快进来！ = Come in, quick!'],
+      ['来', 'lái', 'to come', '进来 jìnlai = to come in'],
+    ],
+    phrases: [],
+    conversations: [],
+  },
 ];
